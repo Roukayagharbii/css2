@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2a8a8;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight:bolder;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.hero {
+    background-image: url('it.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Positioning for the overlay */
+}
+
+.hero-content {
+    text-align: center; /* Center text */
+    color: #fff; /* Text color */
+    position: relative; /* For overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Position overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1; /* Behind the text */
+}
+.hero-content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ff6600; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    font-size: 18px; /* Button text size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.cta-button:hover {
+    background-color: #e55b00; /* Darker shade on hover */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.card img {
+    height: 200px;
+    object-fit: cover; /* Ensures images cover the card area */
+}
+.custom-footer {
+    background-color: #e48989; /* Example: a green color */
+}

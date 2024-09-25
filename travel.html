@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pack up and go</title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <title>Travel Destinations</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">𝓹𝓪𝓬𝓴 𝓾𝓹 𝓪𝓷𝓭 𝓰𝓸</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Let us plan your getaway.</h1>
+            <p> The catch? <br>
+                Your destination is a surprise!</p>
+                <a href="#tours" class="cta-button">Explore Tours</a>
+   </div>
+    </header>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Choose Your Own Adventure</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="plane.webp" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Plane Trips</h5>
+                        <p class="card-text">Fly 1-6 hours from your home airport to another city full of exciting surprises!.</p>
+                        <a href="#destination1" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="out.jpg" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Outdoors Road Trips</h5>
+                        <p class="card-text">Hit the road and drive to a nature-centric surprise destination..</p>
+                        <a href="#destination2" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="u pick.png" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">You Pick Trips</h5>
+                        <p class="card-text">Choose your destination! You're in charge of getting there, and we'll take care of the rest.</p>
+                        <a href="#destination3" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Tour Packages</h2>
+        <div class="accordion" id="tourAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tour Package 1
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#tourAccordion">
+                    <div class="card-body">
+                        A brief description of Tour Package 1. Explore amazing sights and experiences that await you.
+                        <br>
+                        <a href="#package1" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Tour Package 2
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#tourAccordion">
+                    <div class="card-body">
+                        A brief description of Tour Package 2. Discover the wonders and beauty of this incredible destination.
+                        <br>
+                        <a href="#package2" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Tour Package 3
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#tourAccordion">
+                    <div class="card-body">
+                        A brief description of Tour Package 3. Join us for an unforgettable adventure in this stunning locale.
+                        <br>
+                        <a href="#package3" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination of Interest</label>
+                <select class="form-control" id="destination" required>
+                    <option value="">Select a destination...</option>
+                    <option value="paris">Paris</option>
+                    <option value="rome">Rome</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    
+    
+</body>
+<footer     class="custom-footer">
+    <div class="container text-center py-4">
+        <p>&copy;  All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com" class="text-white mx-2" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-white mx-2" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="text-white mx-2" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-white mx-2" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+</html>
